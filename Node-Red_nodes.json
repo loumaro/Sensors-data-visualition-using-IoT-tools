@@ -1,0 +1,1158 @@
+[
+    {
+        "id": "f6f2187d.f17ca8",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "45d68f2ab1e618be",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "TempSens_1",
+        "func": "var rand;\nrand = Number(Math.random() * (15 - 12) + 12).toFixed(2);\nmsg.payload = Number(rand);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 60,
+        "wires": [
+            [
+                "fdc7d957d60e9382"
+            ]
+        ]
+    },
+    {
+        "id": "ba7695bd3d309527",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "TempSens_2",
+        "func": "var rand;\nrand = Number(Math.random() * (15 - 12) + 12).toFixed(2);\nmsg.payload = Number(rand);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 120,
+        "wires": [
+            [
+                "fdc7d957d60e9382"
+            ]
+        ]
+    },
+    {
+        "id": "6fda9f02a7449217",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "VoltSens_1",
+        "func": "var rand;\nvar max=250;\nvar min=215;\nrand = Number(Math.random() * (max-min) + min).toFixed(2);\nmsg.payload = Number(rand);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 1140,
+        "wires": [
+            [
+                "138d256a6e014b9a"
+            ]
+        ]
+    },
+    {
+        "id": "ad682910db69bd6f",
+        "type": "mysql",
+        "z": "f6f2187d.f17ca8",
+        "mydb": "42b97f5d68fabfea",
+        "name": "",
+        "x": 930,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dd0eba4de383f020",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "TempSens_3",
+        "func": "var rand;\nrand = Number(Math.random() * (15 - 12) + 12).toFixed(2);\nmsg.payload = Number(rand);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 180,
+        "wires": [
+            [
+                "fdc7d957d60e9382"
+            ]
+        ]
+    },
+    {
+        "id": "6cfc319e48340ecc",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "TempSens_4",
+        "func": "var rand;\nrand = Number(Math.random() * (15 - 12) + 12).toFixed(2);\nmsg.payload = Number(rand);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 240,
+        "wires": [
+            [
+                "fdc7d957d60e9382"
+            ]
+        ]
+    },
+    {
+        "id": "cc100e8f20159340",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "TempSens_5",
+        "func": "var rand;\nrand = Number(Math.random() * (15 - 12) + 12).toFixed(2);\nmsg.payload = Number(rand);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 300,
+        "wires": [
+            [
+                "fdc7d957d60e9382"
+            ]
+        ]
+    },
+    {
+        "id": "edd1deaf98c08ebb",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "HumSens_1",
+        "func": "var rand;\nrand = Number(Math.random() * (95-80) + 80).toFixed(2);\nmsg.payload = Number(rand);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 420,
+        "wires": [
+            [
+                "cc1aa60181437af9"
+            ]
+        ]
+    },
+    {
+        "id": "c179ad238e4b92be",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "HumSens_2",
+        "func": "var rand;\nrand = Number(Math.random() * (95-80) + 80).toFixed(2);\nmsg.payload = Number(rand);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 480,
+        "wires": [
+            [
+                "cc1aa60181437af9"
+            ]
+        ]
+    },
+    {
+        "id": "4a1be25be28acf2c",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "HumSens_3",
+        "func": "var rand;\nrand = Number(Math.random() * (95-80) + 80).toFixed(2);\nmsg.payload = Number(rand);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 540,
+        "wires": [
+            [
+                "cc1aa60181437af9"
+            ]
+        ]
+    },
+    {
+        "id": "61a672d7ca1d9e3a",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "HumSens_4",
+        "func": "var rand;\nrand = Number(Math.random() * (95-80) + 80).toFixed(2);\nmsg.payload = Number(rand);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 600,
+        "wires": [
+            [
+                "cc1aa60181437af9"
+            ]
+        ]
+    },
+    {
+        "id": "872f6314bdecf36c",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "HumSens_5",
+        "func": "var rand;\nrand = Number(Math.random() * (95-80) + 80).toFixed(2);\nmsg.payload = Number(rand);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 660,
+        "wires": [
+            [
+                "cc1aa60181437af9"
+            ]
+        ]
+    },
+    {
+        "id": "3361d87f8ea05bc4",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "LightSens_1",
+        "func": "var rand;\nrand = Number(Math.random() * (800 - 600) + 600).toFixed(2);\nmsg.payload = Number(rand);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 780,
+        "wires": [
+            [
+                "a01c18069b6bf74c"
+            ]
+        ]
+    },
+    {
+        "id": "9d9d49414f272f6b",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "LightSens_2",
+        "func": "var rand;\nrand = Number(Math.random() * (800 - 600) + 600).toFixed(2);\nmsg.payload = Number(rand);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 840,
+        "wires": [
+            [
+                "a01c18069b6bf74c"
+            ]
+        ]
+    },
+    {
+        "id": "d024130a9c996141",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "LightSens_3",
+        "func": "var rand;\nrand = Number(Math.random() * (800 - 600) + 600).toFixed(2);\nmsg.payload = Number(rand);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 900,
+        "wires": [
+            [
+                "a01c18069b6bf74c"
+            ]
+        ]
+    },
+    {
+        "id": "7bc22b71471086f2",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "LightSens_4",
+        "func": "var rand;\nrand = Number(Math.random() * (800 - 600) + 600).toFixed(2);\nmsg.payload = Number(rand);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 960,
+        "wires": [
+            [
+                "a01c18069b6bf74c"
+            ]
+        ]
+    },
+    {
+        "id": "e6b09197660c6f5d",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "LightSens_5",
+        "func": "var rand;\nrand = Number(Math.random() * (800 - 600) + 600).toFixed(2);\nmsg.payload = Number(rand);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 1020,
+        "wires": [
+            [
+                "a01c18069b6bf74c"
+            ]
+        ]
+    },
+    {
+        "id": "e000a064a5d55d3b",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "VoltSens_2",
+        "func": "var rand;\nvar max=250;\nvar min=215;\nrand = Number(Math.random() * (max-min) + min).toFixed(2);\nmsg.payload = Number(rand);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 1200,
+        "wires": [
+            [
+                "138d256a6e014b9a"
+            ]
+        ]
+    },
+    {
+        "id": "5d0c92cdf2eb3b1f",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "VoltSens_3",
+        "func": "var rand;\nvar max=250;\nvar min=215;\nrand = Number(Math.random() * (max-min) + min).toFixed(2);\nmsg.payload = Number(rand);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 1260,
+        "wires": [
+            [
+                "138d256a6e014b9a"
+            ]
+        ]
+    },
+    {
+        "id": "7b81d5565426cc5b",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "VoltSens_4",
+        "func": "var rand;\nvar max=250;\nvar min=215;\nrand = Number(Math.random() * (max-min) + min).toFixed(2);\nmsg.payload = Number(rand);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 1320,
+        "wires": [
+            [
+                "138d256a6e014b9a"
+            ]
+        ]
+    },
+    {
+        "id": "84af766d124982fb",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "VoltSens_5",
+        "func": "var rand;\nvar max=250;\nvar min=215;\nrand = Number(Math.random() * (max-min) + min).toFixed(2);\nmsg.payload = Number(rand);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 1380,
+        "wires": [
+            [
+                "138d256a6e014b9a"
+            ]
+        ]
+    },
+    {
+        "id": "8843c39f7c62ca55",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "CurSens_1",
+        "func": "var rand;\nrand = Number(Math.random() * (27 - 18) + 18).toFixed(2);\nmsg.payload = Number(rand);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 1500,
+        "wires": [
+            [
+                "4804b2fa5d08fe79"
+            ]
+        ]
+    },
+    {
+        "id": "34b509073489d948",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "CurSens_2",
+        "func": "var rand;\nrand = Number(Math.random() * (27 - 18) + 18).toFixed(2);\nmsg.payload = Number(rand);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 1560,
+        "wires": [
+            [
+                "4804b2fa5d08fe79"
+            ]
+        ]
+    },
+    {
+        "id": "cff99b74e175e122",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "CurSens_3",
+        "func": "var rand;\nrand = Number(Math.random() * (27 - 18) + 18).toFixed(2);\nmsg.payload = Number(rand);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 1620,
+        "wires": [
+            [
+                "4804b2fa5d08fe79"
+            ]
+        ]
+    },
+    {
+        "id": "357d89426d2ab19f",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "CurSens_4",
+        "func": "var rand;\nrand = Number(Math.random() * (27 - 18) + 18).toFixed(2);\nmsg.payload = Number(rand);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 1680,
+        "wires": [
+            [
+                "4804b2fa5d08fe79"
+            ]
+        ]
+    },
+    {
+        "id": "ba5c40daf97a5fb1",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "CurSens_5",
+        "func": "var rand;\nrand = Number(Math.random() * (27 - 18) + 18).toFixed(2);\nmsg.payload = Number(rand);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 1740,
+        "wires": [
+            [
+                "4804b2fa5d08fe79"
+            ]
+        ]
+    },
+    {
+        "id": "9726b5e1ebf178ba",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "PowFactSens_1",
+        "func": "var rand;\nrand = Number(Math.random() * (0.9 - 0.75) + 0.75).toFixed(2);\nmsg.payload = Number(rand);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 1860,
+        "wires": [
+            [
+                "1fdfeef1d17ebc04"
+            ]
+        ]
+    },
+    {
+        "id": "f71036201b623aa3",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "PowFactSens_2",
+        "func": "var rand;\nrand = Number(Math.random() * (0.9 - 0.75) + 0.75).toFixed(2);\nmsg.payload = Number(rand);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 1920,
+        "wires": [
+            [
+                "1fdfeef1d17ebc04"
+            ]
+        ]
+    },
+    {
+        "id": "96780908149fd782",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "PowFactSens_3",
+        "func": "var rand;\nrand = Number(Math.random() * (0.9 - 0.75) + 0.75).toFixed(2);\nmsg.payload = Number(rand);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 1980,
+        "wires": [
+            [
+                "1fdfeef1d17ebc04"
+            ]
+        ]
+    },
+    {
+        "id": "116f71a7c1a651f9",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "PowFactSens_4",
+        "func": "var rand;\nrand = Number(Math.random() * (0.9 - 0.75) + 0.75).toFixed(2);\nmsg.payload = Number(rand);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 2040,
+        "wires": [
+            [
+                "1fdfeef1d17ebc04"
+            ]
+        ]
+    },
+    {
+        "id": "0a918410f380055e",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "PowFactSens_5",
+        "func": "var rand;\nrand = Number(Math.random() * (0.9 - 0.75) + 0.75).toFixed(2);\nmsg.payload = Number(rand);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 2100,
+        "wires": [
+            [
+                "1fdfeef1d17ebc04"
+            ]
+        ]
+    },
+    {
+        "id": "fdc7d957d60e9382",
+        "type": "join",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "5",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 530,
+        "y": 180,
+        "wires": [
+            [
+                "7fce40c6d153f570"
+            ]
+        ]
+    },
+    {
+        "id": "2b725ac92224bafb",
+        "type": "inject",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "20",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 180,
+        "wires": [
+            [
+                "45d68f2ab1e618be",
+                "ba7695bd3d309527",
+                "dd0eba4de383f020",
+                "6cfc319e48340ecc",
+                "cc100e8f20159340"
+            ]
+        ]
+    },
+    {
+        "id": "7fce40c6d153f570",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "TempSens_1",
+        "func": "var pld,a=msg.payload; //read the input msg\npld = \"INSERT INTO logger(Sensors_idSensors,senValue) VALUES(\\'TempSens_1\\',\" + a[0] + \"), (\\'TempSens_2\\',\" + a[1] + \"),(\\'TempSens_3\\',\" + a[2] + \"),(\\'TempSens_4\\',\" + a[3] + \"),(\\'TempSens_5\\',\" + a[4] +\")\";\nreturn { topic: pld }",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 180,
+        "wires": [
+            [
+                "ad682910db69bd6f"
+            ]
+        ]
+    },
+    {
+        "id": "72bc9db270b06529",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "TempSens_1",
+        "func": "var pld,a=msg.payload; //read the input msg\npld = \"INSERT INTO logger(Sensors_idSensors,senValue) VALUES(\\'HumSens_1\\',\" + a[0] + \"), (\\'HumSens_2\\',\" + a[1] + \"),(\\'HumSens_3\\',\" + a[2] + \"),(\\'HumSens_4\\',\" + a[3] + \"),(\\'HumSens_5\\',\" + a[4] +\")\";\nreturn { topic: pld }",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 540,
+        "wires": [
+            [
+                "e51e5f5a256ccfc0"
+            ]
+        ]
+    },
+    {
+        "id": "cc1aa60181437af9",
+        "type": "join",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "5",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 470,
+        "y": 540,
+        "wires": [
+            [
+                "72bc9db270b06529"
+            ]
+        ]
+    },
+    {
+        "id": "e51e5f5a256ccfc0",
+        "type": "mysql",
+        "z": "f6f2187d.f17ca8",
+        "mydb": "42b97f5d68fabfea",
+        "name": "",
+        "x": 870,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "caa8bdb14143c6e3",
+        "type": "inject",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "20",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 70,
+        "y": 540,
+        "wires": [
+            [
+                "edd1deaf98c08ebb",
+                "c179ad238e4b92be",
+                "4a1be25be28acf2c",
+                "61a672d7ca1d9e3a",
+                "872f6314bdecf36c"
+            ]
+        ]
+    },
+    {
+        "id": "eb738788f42e7084",
+        "type": "inject",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "20",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 70,
+        "y": 900,
+        "wires": [
+            [
+                "3361d87f8ea05bc4",
+                "9d9d49414f272f6b",
+                "d024130a9c996141",
+                "7bc22b71471086f2",
+                "e6b09197660c6f5d"
+            ]
+        ]
+    },
+    {
+        "id": "f667f284b96cbad2",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "TempSens_1",
+        "func": "var pld,a=msg.payload; //read the input msg\npld = \"INSERT INTO logger(Sensors_idSensors,senValue) VALUES(\\'LightSens_1\\',\" + a[0] + \"), (\\'LightSens_2\\',\" + a[1] + \"),(\\'LightSens_3\\',\" + a[2] + \"),(\\'LightSens_4\\',\" + a[3] + \"),(\\'LightSens_5\\',\" + a[4] +\")\";\nreturn { topic: pld }",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 900,
+        "wires": [
+            [
+                "0ad0cf7e7cca7df6"
+            ]
+        ]
+    },
+    {
+        "id": "a01c18069b6bf74c",
+        "type": "join",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "5",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 450,
+        "y": 900,
+        "wires": [
+            [
+                "f667f284b96cbad2"
+            ]
+        ]
+    },
+    {
+        "id": "0ad0cf7e7cca7df6",
+        "type": "mysql",
+        "z": "f6f2187d.f17ca8",
+        "mydb": "42b97f5d68fabfea",
+        "name": "",
+        "x": 850,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ff638eaef6551bc2",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "TempSens_1",
+        "func": "var pld,a=msg.payload; //read the input msg\npld = \"INSERT INTO logger(Sensors_idSensors,senValue) VALUES(\\'VoltSens_1\\',\" + a[0] + \"), (\\'VoltSens_2\\',\" + a[1] + \"),(\\'VoltSens_3\\',\" + a[2] + \"),(\\'VoltSens_4\\',\" + a[3] + \"),(\\'VoltSens_5\\',\" + a[4] +\")\";\nreturn { topic: pld }",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 1260,
+        "wires": [
+            [
+                "35cf597c6a5314fd"
+            ]
+        ]
+    },
+    {
+        "id": "138d256a6e014b9a",
+        "type": "join",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "5",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 430,
+        "y": 1260,
+        "wires": [
+            [
+                "ff638eaef6551bc2"
+            ]
+        ]
+    },
+    {
+        "id": "35cf597c6a5314fd",
+        "type": "mysql",
+        "z": "f6f2187d.f17ca8",
+        "mydb": "42b97f5d68fabfea",
+        "name": "",
+        "x": 830,
+        "y": 1260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2dddd1a0e811b14a",
+        "type": "inject",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "20",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 90,
+        "y": 1260,
+        "wires": [
+            [
+                "6fda9f02a7449217",
+                "e000a064a5d55d3b",
+                "5d0c92cdf2eb3b1f",
+                "7b81d5565426cc5b",
+                "84af766d124982fb"
+            ]
+        ]
+    },
+    {
+        "id": "6b1935e21e27ea39",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "TempSens_1",
+        "func": "var pld,a=msg.payload; //read the input msg\npld = \"INSERT INTO logger(Sensors_idSensors,senValue) VALUES(\\'CurSens_1\\',\" + a[0] + \"), (\\'CurSens_2\\',\" + a[1] + \"),(\\'CurSens_3\\',\" + a[2] + \"),(\\'CurSens_4\\',\" + a[3] + \"),(\\'CurSens_5\\',\" + a[4] +\")\";\nreturn { topic: pld }",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 1620,
+        "wires": [
+            [
+                "f306b14f84e0a83e"
+            ]
+        ]
+    },
+    {
+        "id": "4804b2fa5d08fe79",
+        "type": "join",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "5",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 430,
+        "y": 1620,
+        "wires": [
+            [
+                "6b1935e21e27ea39"
+            ]
+        ]
+    },
+    {
+        "id": "f306b14f84e0a83e",
+        "type": "mysql",
+        "z": "f6f2187d.f17ca8",
+        "mydb": "42b97f5d68fabfea",
+        "name": "",
+        "x": 830,
+        "y": 1620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "78731f2ca6dc6eb7",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "TempSens_1",
+        "func": "var pld,a=msg.payload; //read the input msg\npld = \"INSERT INTO logger(Sensors_idSensors,senValue) VALUES(\\'powFactSens_1\\',\" + a[0] + \"), (\\'powFactSens_2\\',\" + a[1] + \"),(\\'powFactSens_3\\',\" + a[2] + \"),(\\'powFactSens_4\\',\" + a[3] + \"),(\\'powFactSens_5\\',\" + a[4] +\")\";\nreturn { topic: pld }",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 1980,
+        "wires": [
+            [
+                "6aa67cb0effbf96e",
+                "22c4a355bc401640"
+            ]
+        ]
+    },
+    {
+        "id": "1fdfeef1d17ebc04",
+        "type": "join",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "5",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 450,
+        "y": 1980,
+        "wires": [
+            [
+                "78731f2ca6dc6eb7"
+            ]
+        ]
+    },
+    {
+        "id": "6aa67cb0effbf96e",
+        "type": "mysql",
+        "z": "f6f2187d.f17ca8",
+        "mydb": "42b97f5d68fabfea",
+        "name": "",
+        "x": 850,
+        "y": 1980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4ce671c85422fa07",
+        "type": "inject",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "20",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 90,
+        "y": 1620,
+        "wires": [
+            [
+                "8843c39f7c62ca55",
+                "34b509073489d948",
+                "cff99b74e175e122",
+                "357d89426d2ab19f",
+                "ba5c40daf97a5fb1"
+            ]
+        ]
+    },
+    {
+        "id": "8fa44cb9b9bce680",
+        "type": "inject",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "20",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 70,
+        "y": 1980,
+        "wires": [
+            [
+                "9726b5e1ebf178ba",
+                "f71036201b623aa3",
+                "96780908149fd782",
+                "116f71a7c1a651f9",
+                "0a918410f380055e"
+            ]
+        ]
+    },
+    {
+        "id": "22c4a355bc401640",
+        "type": "debug",
+        "z": "f6f2187d.f17ca8",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 2080,
+        "wires": []
+    },
+    {
+        "id": "42b97f5d68fabfea",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "172.20.10.4",
+        "port": "3306",
+        "db": "sensors_db",
+        "tz": "",
+        "charset": "UTF8"
+    }
+]

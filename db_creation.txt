@@ -1,0 +1,84 @@
+-- MySQL Workbench BY LOUZI
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
+
+-- -----------------------------------------------------
+-- Schema sensors_db
+-- -----------------------------------------------------
+-- -----------------------------------------------------
+-- Schema sensors_db
+-- -----------------------------------------------------
+
+-- -----------------------------------------------------
+-- Schema sensors_db
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `sensors_db` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci ;
+USE `sensors_db` ;
+
+-- -----------------------------------------------------
+-- Table `sensors_db`.`categories`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `sensors_db`.`categories` (
+  `typeCategories` CHAR(30) NOT NULL,
+  PRIMARY KEY (`typeCategories`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
+
+
+-- -----------------------------------------------------
+-- Table `sensors_db`.`locations`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `sensors_db`.`locations` (
+  `idLocations` INT NOT NULL,
+  `Area` CHAR(30) NULL DEFAULT NULL,
+  PRIMARY KEY (`idLocations`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
+
+
+-- -----------------------------------------------------
+-- Table `sensors_db`.`sensors`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `sensors_db`.`sensors` (
+  `idSensors` CHAR(30) NOT NULL,
+  `UNIT` CHAR(30) NULL DEFAULT NULL,
+  `Categories_typeCategories` CHAR(30) NOT NULL,
+  `Locations_idLocations` INT NOT NULL,
+  PRIMARY KEY (`idSensors`),
+  INDEX `fk_Sensors_Categories1_idx` (`Categories_typeCategories` ASC) VISIBLE,
+  INDEX `fk_Sensors_Locations1_idx` (`Locations_idLocations` ASC) VISIBLE,
+  CONSTRAINT `fk_Sensors_Categories1`
+    FOREIGN KEY (`Categories_typeCategories`)
+    REFERENCES `sensors_db`.`categories` (`typeCategories`),
+  CONSTRAINT `fk_Sensors_Locations1`
+    FOREIGN KEY (`Locations_idLocations`)
+    REFERENCES `sensors_db`.`locations` (`idLocations`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
+
+
+-- -----------------------------------------------------
+-- Table `sensors_db`.`log`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `sensors_db`.`log` (
+  `Sensors_idSensors` CHAR(30) NOT NULL,
+  `Measurements_TimeStamp` TIMESTAMP DEFAULT CURRENT_TIMESTAMP, /* To auto affect time stamp*/
+  `Value` FLOAT NULL DEFAULT NULL,
+  PRIMARY KEY (`Sensors_idSensors`, `Measurements_TimeStamp`),
+  INDEX `fk_Sensors_has_Measurements_Sensors1_idx` (`Sensors_idSensors` ASC) VISIBLE,
+  CONSTRAINT `fk_Sensors_has_Measurements_Sensors1`
+    FOREIGN KEY (`Sensors_idSensors`)
+    REFERENCES `sensors_db`.`sensors` (`idSensors`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
