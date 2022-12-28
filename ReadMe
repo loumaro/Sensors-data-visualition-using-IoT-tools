@@ -1,0 +1,7 @@
+----------------------                  ----------------------
+---------------------- How to use files ----------------------
+----------------------                  ----------------------
+
+For Node-Red JSON file upload it to your Node-Red app by using "import" section and choosing the file. 
+To create databases in your SQL sever, copy and paste the content of "db_creation.txt" and past it into as querry.
+For Grafana dashboard template, upload it in the same ways as Node-Red JSON file.
